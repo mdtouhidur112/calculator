@@ -1,0 +1,118 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #333;
+
+}
+
+.container {
+    position: relative;
+    min-width: 300px;
+    min-height: 400px;
+    background: #444;
+    padding: 40px 30px 30px;
+    border-radius: 30px;
+    box-shadow: 30px 30px 30px rgba(0, 0, 0, 30)
+        /*,
+                10px 10px 80px rgba(0,0,0,30),
+                inset -5px -5px 15px rgba(0,0,0,30)
+                inset 5px 5px 15px rgba(0,0,0,30)
+
+                
+    */
+
+}
+
+
+
+.clearulator {
+    position: relative;
+    display: grid;
+}
+
+.clearulator .value {
+    padding-right: 10px;
+    position: relative;
+    grid-column: span 4;
+    margin-bottom: 20px;
+
+    border-radius: 10px;
+    height: 100px;
+    width: 382px;
+    outline: none;
+    background: #a7af7c;
+    text-align: right;
+    font-size: 30px;
+    font-style: content:;
+
+}
+
+.clearulator span {
+    position: relative;
+    place-items: center;
+    display: grid;
+    width: 80px;
+    height: 80px;
+    margin: 8px;
+    background: linear- gradient(180deg, #2f2f2f, #3f3f3f);
+    box-shadow: inset -8px 0 8px rgba(0, 2, 0, 15),
+        inset -8px 0 8px rgba(0, 0, 25),
+        0 0 0 2px rgba(0, 0, 75),
+        10px 20px 25px rgba(0, 0, 0, 2);
+    border-radius: 20px;
+    color: aliceblue;
+    user-select: none;
+    cursor: pointer;
+    font-weight: 400px;
+
+
+}
+
+.clearulator span::before {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 4px;
+    bottom: 14px;
+    right: 12px;
+    background: linear- gradient(180deg, #2f2f2f, #3f3f3f);
+    border-radius: 10px;
+}
+.clearulator span:active{
+    filter: brightness(80);
+}
+
+.clearulator span i {
+    position: relative;
+    font-style: normal;
+    font-size: 40px
+}
+.clearulator .clr{
+    grid-column: span 2;
+    width: 180px;
+    background-color: bisque;
+    color: red;
+    font-weight:bolder;
+    font-family: monospace;
+}
+
+
+.clearulator span .i0 {
+    font-size: 20px;
+}
+
+
+
+
+
+
+
